@@ -6,7 +6,7 @@
         <div class="flex flex-col w-full mb-12 text-left ">
             <div class="w-full mx-auto lg:w-1/2">
                 <h2 class="mx-auto mb-6 text-xl font-semibold leading-none tracking-tighter text-black title-font">Liste des Posts existants</h2>
-                <p class="mx-auto mb-4 text-base font-medium leading-relaxed text-blueGray-700 "> Right. Say that again. No, no, George, look, it's just an act, right? Okay, so 9:00 you're strolling through the parking. </p>
+                <p class="mx-auto mb-4 text-base font-medium leading-relaxed text-blueGray-700 "> Ici vous allez trouver tout les listes de commentaire existant dans le base de données </p>
                 @foreach($posts as $post)
                 <p class="flex items-center mb-2 font-semibold text-blueGray-700 ">
                     <span class="inline-flex items-center justify-center flex-shrink-0 w-6 h-6 mr-2 rounded-full">
