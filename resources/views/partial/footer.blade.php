@@ -36,7 +36,7 @@
         </div>
         <div class="w-full px-8 mt-4 rounded-b-lg bg-blueGray-50">
             <div class="container inline-flex flex-col flex-wrap items-center px-5 py-6 mx-auto sm:flex-row">
-                <p class="mx-auto text-sm text-center text-black sm:text-left "> © 2021 </p>
+                <p class="mx-auto text-sm text-center text-black sm:text-left "> © 2021 ANJA HARIVONY</p>
             </div>
         </div>
     </footer>
