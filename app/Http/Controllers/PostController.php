@@ -52,6 +52,13 @@ class PostController extends Controller
 
         return redirect()->route('welcome');
     }
+    public function delete($id)
+    {
+        $post = Post::find($id);
+        $post->delete();
+
+        return redirect()->route('welcome');
+    }
 
     public function contact()
     {
