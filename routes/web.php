@@ -19,7 +19,10 @@ Route::get('/posts/create', [PostController::class, 'create'])->name('post.creat
 Route::post('/posts/create', [PostController::class, 'store'])->name('post.store');
 Route::get('/posts/{id}', [PostController::class, 'show'])->name('post.show');
 Route::get('/contact', [PostController::class, 'contact'])->name('contact');
-Route::get('/post/delete/{id}', [PostController::class, 'delete'])->name('post.delete');
+Route::get('/posts/delete/{id}', [PostController::class, 'delete'])->name('post.delete');
+Route::get('/posts/updateshow/{id}', [PostController::class, 'updateshow'])->name('post.update.show');
+Route::post('/posts/update', [PostController::class, 'update'])->name('post.update');
+
 
 /* Route::get('/posts', function () {
     return response()->json([

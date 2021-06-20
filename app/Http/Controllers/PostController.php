@@ -60,6 +60,24 @@ class PostController extends Controller
         return redirect()->route('welcome');
     }
 
+    public function updateshow($id)
+    {
+        $post = Post::find($id);
+
+        return view('articleShowUpdate', [
+            'post' => $post
+        ]);
+    }
+    public function update(Request $request)
+    {
+        $post = Post::find($request->id);
+        $post->update([
+            'title' => $request->title,
+            'content' => $request->content,
+        ]);
+        return redirect()->route('post.show', $id = "$request->id");
+    }
+
     public function contact()
     {
         return view('contact');
